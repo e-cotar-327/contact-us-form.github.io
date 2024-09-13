@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formSimplified.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap"
+      rel="stylesheet" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <div class="container">
+      <form>
+        <div class="inputInfo">
+          <label for="fname">First Name*</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name..."
+            required />
+          <span id="fnameSpan" class="message hidden"></span>
+        </div>
+        <div class="inputInfo">
+          <label for="lname">Last Name*</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name..."
+            required />
+          <span id="lnameSpan" class="message hidden"></span>
+        </div>
+
+        <div class="inputInfo">
+          <label for="email">Email*</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email..."
+            required />
+          <span id="emailSpan" class="message hidden"></span>
+        </div>
+        <div class="inputInfo">
+          <label for="phnumb">Phone number*</label>
+          <input
+            type="tel"
+            id="phnumb"
+            name="phonenumber"
+            placeholder="Your phone number..."
+            required
+            max="9" />
+          <span id="phnumbSpan" class="message hidden"></span>
+        </div>
+        <!--<span class="fi fi-au"></span>-->
+        <div class="inputInfo">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="select">-- Select your country --</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+
+        <div class="inputInfo">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Your address..." />
+        </div>
+
+        <div class="inputInfo">
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"></textarea>
+        </div>
+
+        <div class="inputInfo" id="buttonDiv"><input type="submit" /></div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

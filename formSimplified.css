@@ -33,6 +33,13 @@ label {
 .inputInfo {
     width: 85%;
     margin: auto;
+    position: relative;
+}
+
+.inputInfo svg {
+    position: absolute;
+    top: 50%;
+    right: 3%;
 }
 
 /* When typing in an input field, make that field prominent coloring its borders */

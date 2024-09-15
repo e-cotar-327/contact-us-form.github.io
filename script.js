@@ -43,30 +43,44 @@ function successClasslistToggle(el) {
     var message = el.nextElementSibling;
     if (!message.classList.contains("hidden")) {
         message.classList.add("hidden");
-    } else {
-    }
+    } else {}
     if (el.classList.contains("failInput")) {
         el.classList.remove("failInput");
-    } else {
-    }
+    } else {}
     if (!el.classList.contains("successInput")) {
         el.classList.add("successInput");
-    } else {
-    }
+    } else {}
+    var inputDiv = el.parentNode;
+    var successMark = inputDiv.querySelector('.successMark');
+    var failMark = inputDiv.querySelector('.failMark');
+    if (successMark.classList.contains("hidden")) {
+        successMark.classList.remove("hidden");
+    } else { }
+    if (!failMark.classList.contains("hidden")) {
+        failMark.classList.add("hidden");
+    } else { }
 }
 
 function failClasslistsToggle(el) {
     var message = el.nextElementSibling;
     if (message.classList.contains("hidden")) {
         message.classList.remove("hidden");
-    }
+    } else { }
     if (el.classList.contains("successInput")) {
         el.classList.remove("successInput");
-    } else {
-    }
+    } else { }
     if (!el.classList.contains("failInput")) {
         el.classList.add("failInput");
-    }
+    } else { }
+    var inputDiv = el.parentNode;
+    var successMark = inputDiv.querySelector('.successMark');
+    var failMark = inputDiv.querySelector('.failMark');
+    if (failMark.classList.contains("hidden")) {
+        failMark.classList.remove("hidden");
+    } else { }
+    if (!successMark.classList.contains("hidden")) {
+        successMark.classList.add("hidden");
+    } else { }
 }
 
 function emailValidation(input) {
